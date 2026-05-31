@@ -3,7 +3,7 @@
 <div align="center">
     <a href="./requirements.txt"><img alt="Python" src="https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white"></a>&nbsp;
     <a href="#lisans"><img alt="License" src="https://img.shields.io/badge/License-MIT-success"></a>&nbsp;
-    <a href="https://github.com/enesehs/usom-filter/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/enesehs/usom-filter?logo=github"></a>&nbsp;
+</a>&nbsp;
   
 </div>
 
