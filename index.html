@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>USOM Filter — Dokümantasyon</title>
+  <meta name="description" content="USOM Zararlı URL Listesi Engelleme Sistemi Dokümantasyonu">
+
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220cc;
+      --muted: #94a3b8;
+      --accent1: #7c3aed;
+      --accent2: #a07de6;
+      --glass: rgba(255, 255, 255, 0.04);
+      --radius: 16px;
+      --maxw: 1100px;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      font-family: "Mona Sans", Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(124, 58, 237, 0.12), transparent 10%),
+        radial-gradient(1000px 500px at 90% 90%, rgba(6, 182, 212, 0.08), transparent 8%),
+        var(--bg);
+      color: #e6eef8;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 48px 24px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    header.hero h1,
+    .title h1,
+    .md h1,
+    .md h2,
+    .md h3,
+    .md h4 {
+      font-family: 'Mona Sans Expanded', Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      color: #e6eef8;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--maxw);
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    header.hero {
+      grid-column: 1 / -1;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 4px;
+      position: relative;
+    }
+
+    .hero-content {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex: 1;
+    }
+
+    .author-info {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+    }
+
+    .author-avatar {
+      width: 24px;
+      height: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .author-name {
+      color: #e6eef8;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .author-name:hover {
+      color: var(--accent2);
+    }
+
+    #usom-logo {
+      width: 100px;
+      height: auto;
+      cursor: pointer;
+    }
+
+    .logo {
+      width: 150px;
+      height: 80px;
+      border-radius: 14px;
+      background: #ffffff;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+    }
+
+    #icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    #icon::hover {
+      width: 24px;
+      height: 24px;
+      ;
+    }
+
+
+    #scroll-top-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 28px;
+      width: 44px;
+      height: 44px;
+      border-radius: 999px;
+      border: 0;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      color: white;
+      font-size: 20px;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 8px 30px rgba(2, 6, 23, 0.5);
+      cursor: pointer;
+      z-index: 9999
+    }
+
+    #scroll-top-btn.hidden {
+      display: none
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .title h1 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: 0.6px
+    }
+
+    .title p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .card {
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: 0 6px 22px rgba(2, 6, 23, 0.6);
+      backdrop-filter: blur(8px) saturate(120%);
+    }
+
+    .md {
+      min-height: 60vh;
+      padding: 26px;
+      overflow: auto;
+    }
+
+    .md pre code.hljs {
+      overflow-x: hidden;
+    }
+
+    .md h1 {
+      font-size: 20px;
+      margin-top: 6px
+    }
+
+    .md h2 {
+      font-size: 17px;
+      margin-top: 18px
+    }
+
+    .md p {
+      color: var(--muted);
+      line-height: 1.6
+    }
+
+    .md code {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 3px 6px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace
+    }
+
+    .md pre {
+      background: #071026;
+      padding: 14px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative
+    }
+
+    .md .copy-btn {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      padding: 6px 10px;
+      border-radius: 8px;
+      border: 0;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .18s;
+      z-index: 5;
+      opacity: 0.2;
+    }
+
+    .md .copy-btn:hover {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.06));
+      color: white;
+      transform: translateY(-2px);
+      opacity: 0.9
+    }
+
+    .md .copy-btn.copied {
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: white
+    }
+
+    .md a,
+    .md em {
+      color: var(--accent1);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .md a:hover {
+      color: var(--accent2);
+      text-decoration: underline;
+    }
+
+    .md ul {
+      line-height: 1.7
+    }
+
+    .md table {
+      width: 100%;
+      border-collapse: collapse
+    }
+
+    .md table th,
+    .md table td {
+      padding: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      text-align: left
+    }
+    .card.sidebar{
+      height: fit-content;
+    }
+    .sidebar {
+      position: sticky;
+      top: 18px;
+      height: calc(100vh - 96px);
+      overflow: auto;
+      padding: 18px;
+      background: linear-gradient(180deg, rgba(11, 18, 32, 0.6), rgba(11, 18, 32, 0.45));
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      box-shadow: 0 14px 40px rgba(2, 6, 23, 0.45);
+      backdrop-filter: blur(6px) saturate(120%);
+    }
+
+    .meta {
+      display: flex;
+      flex-direction: column;
+      gap: 14px
+    }
+
+    .meta .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 13px;
+      box-shadow: 0 6px 18px rgba(124, 58, 237, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      transition: transform .14s ease, box-shadow .14s ease;
+    }
+
+    .meta .btn:focus {
+      outline: 2px solid rgba(124, 58, 237, 0.22);
+      outline-offset: 2px;
+    }
+
+    .meta .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(124, 58, 237, 0.22);
+    }
+
+    .section-title {
+      color: #e6eef8;
+      font-weight: 700;
+      font-size: 14px;
+      margin: 6px 0 4px 0;
+    }
+
+    .section-desc {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      margin-bottom: 6px;
+      opacity: 0.95;
+    }
+
+    .list {
+      margin-top: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px
+    }
+
+    .list a {
+      display: block;
+      padding: 8px;
+      border-radius: 8px;
+      color: var(--muted);
+      text-decoration: none
+    }
+
+    .file-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0.005));
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+
+    .file-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(2, 6, 23, 0.25);
+      border-color: rgba(255, 255, 255, 0.07);
+    }
+
+    .file-meta {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      flex: 1
+    }
+
+    .file-link-wrap {
+      display: flex;
+      flex-direction: column
+    }
+
+    .file-link-wrap a {
+      color: var(--muted);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 13px
+    }
+
+    .file-link-wrap a:hover {
+      color: #e6eef8
+    }
+
+    .file-desc {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 6px;
+      opacity: 0.9
+    }
+
+    .copy-link-btn {
+      flex: 0 0 auto;
+      margin-left: auto;
+      padding: 6px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      background: transparent;
+      color: var(--muted);
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .12s ease, transform .12s ease, color .12s ease;
+    }
+
+    .copy-link-btn:hover {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+      color: white;
+      transform: translateY(-2px)
+    }
+
+    .copy-link-btn:focus {
+      outline: 2px solid rgba(124, 58, 237, 0.12);
+      outline-offset: 2px
+    }
+
+    .copy-link-btn.copied {
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: white;
+    }
+
+    .vendor-icons {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .vendor-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      transition: transform .14s ease, box-shadow .14s ease
+    }
+
+    .vendor-icons a img {
+      width: 18px;
+      height: 18px;
+      display: block
+    }
+
+    .vendor-icons a:hover,
+    .vendor-icons a:focus {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(124, 58, 237, 0.18);
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+    }
+
+    @media (max-width:980px) {
+      .sidebar {
+        position: relative;
+        height: auto;
+      }
+
+      .meta .btn {
+        width: 100%;
+      }
+
+      .author-info {
+        position: static;
+        margin-top: 10px
+      }
+    }
+
+    footer {
+      grid-column: 1 / -1;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center
+    }
+
+    .footer {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      margin-top: 18px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.005));
+      box-shadow: 0 6px 18px rgba(2, 6, 23, 0.5);
+    }
+
+    .footer a {
+      color: var(--accent1);
+      text-decoration: none;
+      font-weight: 700
+    }
+
+    .footer a:hover {
+      color: var(--accent2);
+      text-decoration: underline
+    }
+
+    .footer-left {
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .footer-center {
+      font-weight: 600;
+      color: #e6eef8;
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .footer-right {
+      display: flex;
+      gap: 12px;
+      align-items: center
+    }
+
+    .footer .dot {
+      opacity: 0.45
+    }
+
+    @media (max-width:980px) {
+      .wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        height: auto;
+        position: relative;
+        top: auto
+      }
+
+      .author-info {
+        position: static;
+        margin-top: 16px;
+        justify-content: center;
+      }
+
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+      }
+    }
+
+    @media (max-width:640px) {
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .author-info {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.2/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="hero-content">
+        <div class="logo">
+          <img src="docs/img/logo.png" alt="Usom Logo" id="usom-logo" draggable="false">
+        </div>
+        <div class="title">
+          <h1>USOM Zararlı URL Listesi Dokümantasyonu</h1>
+          <p>README.md içeriği okunaklı, modern ve responsive bir arayüzde sunulmuştur.</p>
+        </div>
+      </div>
+      <div class="author-info">
+        <img src="https://raw.githubusercontent.com/enesehs/enesehs.github.io/refs/heads/main/public/favicon.ico"
+          alt="Author Avatar" class="author-avatar" draggable="false">
+        <a href="https://enesehs.dev" target="_blank" rel="noopener" class="author-name">
+          enesehs.dev
+        </a>
+      </div>
+    </header>
+
+    <main class="card md" id="content">
+    </main>
+    <aside class="card sidebar">
+      <div class="meta">
+        <div>
+          <a class="btn" href="#">Filtreler</a>
+        </div>
+
+        <div class="section-title">⚡ Hızlı İndirme</div>
+        <div class="section-desc">USOM zararlı URL listesi farklı formatlarda hazırlanmış. Kullandığınız sisteme uygun
+          olanı seçin.</div>
+        <nav class="list" id="output-list">
+          <div class="file-item" data-file="output/ips.txt">
+            <div class="file-meta">
+              <div class="file-link-wrap">
+                <a href="output/ips.txt" download>ips.txt</a>
+                <div class="file-desc">IPv4 adres listesi — bloklamak için IP tabanlı cihazlar.</div>
+              </div>
+              <button class="copy-link-btn" data-path="output/ips.txt" title="URL kopyala"
+                aria-label="ips.txt linkini kopyala">🔗</button>
+            </div>
+            <div>
+              <span class="badge missing" style="display:none">Yok</span>
+            </div>
+          </div>
+          <div class="file-item" data-file="output/urls.txt">
+            <div class="file-meta">
+              <div class="file-link-wrap">
+                <a href="output/urls.txt" download>urls.txt</a>
+                <div class="file-desc">Düz URL listesi — genel engelleme listesi.</div>
+              </div>
+              <button class="copy-link-btn" data-path="output/urls.txt" title="URL kopyala"
+                aria-label="urls.txt linkini kopyala">🔗</button>
+            </div>
+            <div>
+              <span class="badge missing" style="display:none">Yok</span>
+            </div>
+          </div>
+          <div class="file-item" data-file="output/urls_pihole.txt">
+            <div class="file-meta">
+              <div class="file-link-wrap">
+                <a href="output/urls_pihole.txt" download>urls_pihole.txt</a>
+                <div class="file-desc">Pi-hole uyumlu host listesi — DNS seviyesinde engelleme.</div>
+              </div>
+              <button class="copy-link-btn" data-path="output/urls_pihole.txt" title="URL kopyala"
+                aria-label="urls_pihole.txt linkini kopyala">🔗</button>
+            </div>
+            <div>
+              <span class="badge missing" style="display:none">Yok</span>
+            </div>
+          </div>
+          <div class="file-item" data-file="output/urls_UBL.txt">
+            <div class="file-meta">
+              <div class="file-link-wrap">
+                <a href="output/urls_UBL.txt" download>urls_UBL.txt</a>
+                <div class="file-desc">uBlock / Brave için filtreleme formatı (3rd-party filter list).</div>
+              </div>
+              <div class="vendor-icons" aria-hidden="true" style="margin-left:8px">
+                <a href="#"
+                  onclick="alert('Linki Kopyala > uBlock Ayarlarına Git > Filtre Ayarları > Özel URL ekle ve kopyalanan bağlantıyı yapıştır');"
+                  title="uBlock Origin - 3rd party filters" aria-label="uBlock talimatları">
+                  <img src="./docs/img/ublock.png" id="icon" alt="uBlock">
+                </a>
+                <a href="#"
+                  onclick="alert('Linki Kopyala > Brave Ayarlarına Git > Kalkan Ayarları > İçerik filtreleme > Özel URL ekle ve kopyalanan bağlantıyı yapıştır');"
+                  title="Brave Shields - Content filtering" aria-label="Brave talimatları">
+                  <img src="docs/img/brave.png" id="icon" alt="Brave">
+                </a>
+              </div>
+              <button class="copy-link-btn" data-path="output/urls_UBL.txt" title="URL kopyala"
+                aria-label="urls_UBL.txt linkini kopyala">🔗</button>
+            </div>
+            <div>
+              <span class="badge missing" style="display:none">Yok</span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </aside>
+
+    <footer class="footer card" role="contentinfo" aria-label="site-footer">
+      <div class="footer-left">README.md'den oluşturuldu — hızlı önizleme</div>
+      <div class="footer-center">©<span id="year"></span>
+        <a href="https://enesehs.dev" target="_blank" rel="noopener">enesehs.dev</a>
+        <span class="dot">•</span>
+        <span title="Made with care">Made with <span style="font-size:18px; color:#ff0000">♥</span></span>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/enesehs/usom-filter" target="_blank" rel="noopener">GitHub</a>
+        <span class="dot">•</span>
+        <a href="https://enesehs.dev" target="_blank" rel="noopener">Portfolio</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (async function () {
+      const content = document.getElementById('content');
+      content.innerHTML = '<p style="color:var(--muted)">README.md yükleniyor…</p>';
+
+      async function renderMarkdown(mdText) {
+        content.innerHTML = marked.parse(mdText, { mangle: false, headerIds: true });
+        if (!document.getElementById('top')) {
+          content.insertAdjacentHTML('afterbegin', '<div id="top" style="position:relative;margin-top:0px;height:1px"></div>');
+        }
+        document.querySelectorAll('pre code').forEach((el) => { try { hljs.highlightElement(el) } catch (e) { } });
+        document.querySelectorAll('.md pre').forEach(pre => {
+          if (pre.querySelector('.copy-btn')) return;
+          const btn = document.createElement('button');
+          btn.className = 'copy-btn';
+          btn.type = 'button';
+          btn.innerText = 'Kopyala';
+          btn.addEventListener('click', async () => {
+            const codeEl = pre.querySelector('code');
+            if (!codeEl) return;
+            const text = codeEl.innerText;
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(text);
+              } else {
+                const ta = document.createElement('textarea');
+                ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+              }
+              btn.classList.add('copied');
+              const prev = btn.innerText;
+              btn.innerText = 'Kopyalandı';
+              setTimeout(() => { btn.classList.remove('copied'); btn.innerText = prev; }, 1500);
+            } catch (e) {
+              btn.innerText = 'Hata';
+              setTimeout(() => { btn.innerText = 'Kopyala' }, 1500);
+            }
+          });
+          pre.style.position = pre.style.position || 'relative';
+          pre.appendChild(btn);
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+          a.addEventListener('click', e => {
+            e.preventDefault();
+            const id = a.getAttribute('href').slice(1);
+            const el = document.getElementById(id);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+        });
+        const logo = document.querySelector('.logo');
+        if (logo) logo.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }) });
+        const st = document.getElementById('scroll-top-btn');
+        if (st) st.classList.toggle('hidden', window.scrollY < 200);
+      }
+
+      try {
+        let res = await fetch('./README.md', { cache: 'no-store' });
+        if (!res.ok) {
+          res = await fetch('../README.md', { cache: 'no-store' });
+        }
+
+        if (res && res.ok) {
+          const md = await res.text();
+          await renderMarkdown(md);
+        } else {
+          throw new Error('README.md bulunamadı (HTTP ' + (res ? res.status : 'unknown') + ')');
+        }
+      } catch (err) {
+        content.innerHTML = '<div style="color:var(--muted);line-height:1.6">' +
+          '<strong>README.md yüklenemedi:</strong> ' + (err && err.message ? err.message : '') +
+          '<br>Lütfen bu dosyayı sunucu üzerinden (ör. GitHub Pages) açtığınızdan emin olun veya README.md dosyasının proje kökünde bulunduğunu doğrulayın.</div>';
+      }
+
+      if (!document.getElementById('scroll-top-btn')) {
+        const btn = document.createElement('button');
+        btn.id = 'scroll-top-btn';
+        btn.className = 'hidden';
+        btn.title = 'Başa dön';
+        btn.innerHTML = '↑';
+        btn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }) });
+        document.body.appendChild(btn);
+
+        window.addEventListener('scroll', function () {
+          const v = document.getElementById('scroll-top-btn');
+          if (!v) return;
+          v.classList.toggle('hidden', window.scrollY < 500);
+        });
+      }
+    })();
+
+    try { document.getElementById('year').textContent = new Date().getFullYear(); } catch (e) { }
+
+    (function () {
+      const GH_PAGES = 'https://enesehs.github.io/usom-filter';
+      const items = document.querySelectorAll('.file-item');
+      items.forEach(async (it) => {
+        const path = it.getAttribute('data-file');
+        const badge = it.querySelector('.badge');
+        try {
+          const res = await fetch(path, { method: 'GET', cache: 'no-store' });
+          if (res && res.ok) {
+            if (badge) badge.style.display = 'none';
+          } else {
+            if (badge) { badge.style.display = 'inline-block'; badge.classList.add('missing'); badge.textContent = 'Yok'; }
+          }
+        } catch (e) {
+          if (badge) { badge.style.display = 'inline-block'; badge.classList.add('missing'); badge.textContent = 'Yok'; }
+        }
+      });
+
+      document.querySelectorAll('.copy-link-btn').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+          const p = btn.getAttribute('data-path');
+          if (!p) return;
+          const ghUrl = GH_PAGES.replace(/\/$/, '') + '/' + p.replace(/^\/+/, '');
+          try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              await navigator.clipboard.writeText(ghUrl);
+            } else {
+              const ta = document.createElement('textarea'); ta.value = ghUrl; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+            }
+            const prev = btn.innerText;
+            btn.innerText = 'Kopyalandı';
+            btn.classList.add('copied');
+            setTimeout(() => { btn.innerText = prev; btn.classList.remove('copied'); }, 1400);
+          } catch (err) {
+            btn.innerText = 'Hata';
+            setTimeout(() => { btn.innerText = '🔗' }, 1200);
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
