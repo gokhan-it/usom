@@ -189,5 +189,3 @@ Bu proje USOM ile resmi bir ilişkisi bulunmayan bağımsız bir açık kaynak p
 
 ---
 
-**Son Güncelleme**: `2025-09-01` | **Sürüm**: `1.0.0`
-
