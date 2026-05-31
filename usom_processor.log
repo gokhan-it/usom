@@ -1969,3 +1969,31 @@
 2026-05-31 19:00:23,508 - INFO - urls_UBL.txt dosyası yazıldı (363686 entry)
 2026-05-31 19:00:23,508 - INFO - İşlem başarıyla tamamlandı!
 2026-05-31 19:00:23,573 - INFO - === İşlem Başarıyla Tamamlandı (33.4s) ===
+2026-05-31 19:16:12,066 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-05-31 19:16:12,066 - INFO - USOM Processor başlatıldı
+2026-05-31 19:16:12,066 - INFO - USOM URL işleme başlatılıyor...
+2026-05-31 19:16:12,066 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-05-31 19:16:42,124 - WARNING - Timeout hatası (Deneme 1)
+2026-05-31 19:16:42,124 - INFO - 1.0 saniye bekleniyor...
+2026-05-31 19:16:43,128 - INFO - USOM URL listesi çekiliyor... (Deneme 2/8)
+2026-05-31 19:17:14,123 - WARNING - Timeout hatası (Deneme 2)
+2026-05-31 19:17:14,123 - INFO - 2.0 saniye bekleniyor...
+2026-05-31 19:17:16,126 - INFO - USOM URL listesi çekiliyor... (Deneme 3/8)
+2026-05-31 19:17:47,122 - WARNING - Timeout hatası (Deneme 3)
+2026-05-31 19:17:47,122 - INFO - 4.0 saniye bekleniyor...
+2026-05-31 19:17:51,124 - INFO - USOM URL listesi çekiliyor... (Deneme 4/8)
+2026-05-31 19:18:22,123 - WARNING - Timeout hatası (Deneme 4)
+2026-05-31 19:18:22,123 - INFO - 8.0 saniye bekleniyor...
+2026-05-31 19:18:30,131 - INFO - USOM URL listesi çekiliyor... (Deneme 5/8)
+2026-05-31 19:19:01,130 - WARNING - Timeout hatası (Deneme 5)
+2026-05-31 19:19:01,130 - INFO - 16.0 saniye bekleniyor...
+2026-05-31 19:19:17,139 - INFO - USOM URL listesi çekiliyor... (Deneme 6/8)
+2026-05-31 19:19:48,122 - WARNING - Timeout hatası (Deneme 6)
+2026-05-31 19:19:48,123 - INFO - 32.0 saniye bekleniyor...
+2026-05-31 19:20:20,150 - INFO - USOM URL listesi çekiliyor... (Deneme 7/8)
+2026-05-31 19:20:51,124 - WARNING - Timeout hatası (Deneme 7)
+2026-05-31 19:20:51,124 - INFO - 64.0 saniye bekleniyor...
+2026-05-31 19:21:55,189 - INFO - USOM URL listesi çekiliyor... (Deneme 8/8)
+2026-05-31 19:22:26,122 - WARNING - Timeout hatası (Deneme 8)
+2026-05-31 19:22:26,123 - ERROR - URL listesi çekme başarısız
+2026-05-31 19:22:26,123 - ERROR - === İşlem Başarısız (374.1s) ===
