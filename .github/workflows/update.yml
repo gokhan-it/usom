@@ -2,8 +2,8 @@ name: Update USOM Lists
 
 on:
   schedule:
-    # Her 1 saatte bir çalış
-    - cron: '0 * * * *'
+    # Her saatin 17. dakikasında çalış (Yoğunluğa takılmamak için)
+    - cron: '18 * * * *'
   workflow_dispatch: # Manuel tetikleme imkanı
   push:
     branches: [ main ]
