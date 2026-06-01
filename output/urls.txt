@@ -1,140 +1,22 @@
 # USOM Zararlı URL Listesi
-# Son Güncelleme: 2026-06-01 09:16:08 UTC
-# Toplam: 136 URL
+# Son Güncelleme: 2026-06-01 12:01:56 UTC
+# Toplam: 18 URL
 
-http://);
-http://* { margin: 0; padding: 0; box-sizing: border-box; }
-http://.divider {
-http://.divider { margin-top: 1.5vh; }
-http://.logo-item img {
-http://.logo-item img { width: 13vh; height: 13vh; max-width: 110px; }
-http://.logo-item {
-http://.logos {
-http://.logos { gap: 16px; }
-http://.logos { gap: clamp(16px, 3vw, 48px); }
-http://.message em {
-http://.message p {
-http://.message p,
-http://.message p:last-child {
-http://.message strong {
-http://.message ul li {
-http://.message ul {
-http://.message ul { font-size: clamp(13px, 1.4vw, 15px); line-height: 1.65; margin-bottom: 10px; }
-http://.message ul { line-height: 1.95; }
-http://.message {
-http://.message { margin-top: 1.5vh; }
-http://.new-url {
+http:///>
 http://<!DOCTYPE html>
 http://</body>
-http://</div>
 http://</head>
 http://</html>
-http://</p>
-http://</style>
-http://</ul>
 http://<body>
-http://<div class="divider"></div>
-http://<div class="logo-item">
-http://<div class="logos">
-http://<div class="message">
+http://<div id="swagger-ui"></div>
 http://<head>
-http://<html lang="tr">
-http://<img src="logo/sgb.svg" alt="Siber Güvenlik Başkanlığı Amblemi">
-http://<img src="logo/usom-logo.svg" alt="USOM Logosu">
-http://<li>CVE başvuruları ve siber ihbar süreçleri,</li>
-http://<li>Güvenlik bildirimleri ve teknik içerikler,</li>
-http://<li>Zararlı bağlantı listeleri,</li>
-http://<meta charset="UTF-8">
-http://<meta name="viewport" content="width=device-width, initial-scale=1.0">
-http://<p>
-http://<p>Bu doğrultuda, bugüne kadar <strong>www.usom.gov.tr</strong> üzerinden sunulan;</p>
-http://<p>Kamuoyuna saygıyla duyurulur.</p>
-http://<p>ilgili mevzuat hükümleri çerçevesinde <strong><a href="http://siberguvenlik.gov.tr">www.siberguvenlik.gov.tr</a></strong> adresi üzerinden yayımlanmaya devam edecektir.</p>
-http://<style>
-http://<title>USOM — Ulusal Siber Olaylara Müdahale Merkezi</title>
-http://<ul>
-http://@font-face {
-http://@keyframes fadeUp {
-http://@media (max-height: 700px) {
-http://@media (max-width: 480px) {
-http://@media (max-width: 768px) {
-http://Siber Güvenlik Başkanlığı; 177 sayılı Cumhurbaşkanlığı Kararnamesi ve 12.03.2025 tarihli, 7545 sayılı Siber Güvenlik Kanunu uyarınca, ülkemizin kritik altyapı sistemlerinin siber dayanıklılığının artırılması ve siber tehditlere karşı dijital güvenliğin tesis edilmesi amacıyla kurulmuştur.
-http://Sistemlerinin güncel kalmasını amaçlayan paydaşlarımızın ve kullanıcılarımızın,
-http://Zararlı bağlantı listelerinin paylaşım yöntemlerinde güncel standartlara geçiş
-http://align-items: center;
-http://animation: fadeUp 0.9s ease 0.15s both;
-http://animation: fadeUp 0.9s ease 0.25s both;
-http://animation: fadeUp 0.9s ease both;
-http://background:
-http://background: linear-gradient(
-http://background: linear-gradient(150deg, #c6d1e5 0%, #d8e0ee 45%, #e8edf6 80%, #f0f3f8 100%);
-http://body {
-http://body { padding: 2vh clamp(20px, 5vw, 48px); }
-http://body::before {
-http://color: #1a2540;
-http://color: #2e3650;
-http://content: '';
-http://display: flex;
-http://flex-direction: column;
-http://flex-wrap: wrap;
-http://font-display: swap;
-http://font-family: 'STIX Two Text', Georgia, serif;
-http://font-family: 'STIX Two Text';
-http://font-size: clamp(16px, 2.1vw, 21px);
-http://font-style: italic;
-http://font-style: normal;
-http://font-weight: 100 900;
-http://font-weight: 400;
-http://font-weight: 600;
-http://from { opacity: 0; transform: translateY(20px); }
-http://gap: 14px;
-http://gap: clamp(28px, 7vw, 88px);
-http://height: 1px;
-http://height: clamp(160px, 22vw, 320px);
-http://hyphens: auto;
-http://inset: 0;
-http://justify-content: center;
-http://letter-spacing: 0.01em;
-http://letter-spacing: 0.02em;
-http://letter-spacing: 0.06em;
-http://line-height: 1.8;
-http://line-height: 2.05;
-http://margin-bottom: 0;
-http://margin-bottom: 28px;
-http://margin-bottom: 4px;
-http://margin-left: 1.25em;
-http://margin-top: 8px;
-http://margin-top: clamp(32px, 4vh, 52px);
-http://margin-top: clamp(40px, 5vh, 64px);
-http://margin: 0 0 0 2em;
-http://max-width: 42vw;
-http://max-width: 900px;
-http://min-height: 100vh;
-http://object-fit: contain;
-http://overflow-wrap: break-word;
-http://padding: 0;
-http://padding: clamp(40px, 8vh, 80px) clamp(20px, 5vw, 48px);
-http://pointer-events: none;
-http://position: fixed;
-http://radial-gradient(ellipse at 50% 0%,   rgba(255, 255, 255, 0.55) 0%, transparent 55%),
-http://radial-gradient(ellipse at 50% 100%, rgba(180, 195, 220, 0.35) 0%, transparent 50%);
-http://rgba(51, 65, 108, 0.14) 20%,
-http://rgba(51, 65, 108, 0.14) 80%,
-http://src: url('fonts/STIXTwoText-Italic-VariableFont_wght.ttf') format('truetype');
-http://src: url('fonts/STIXTwoText-VariableFont_wght.ttf') format('truetype');
-http://tarihi itibariyle sona erecektir.
-http://tavsiye edilmektedir.
-http://text-align: center;
-http://text-align: justify;
-http://text-align: left;
-http://to   { opacity: 1; transform: translateY(0); }
-http://to right,
-http://transparent
-http://transparent,
-http://veri erişim süreçlerini API servislerimiz üzerinden yürütecek şekilde güncellemeleri
-http://width:  clamp(160px, 22vw, 320px);
-http://width: 100%;
-http://width: min(900px, 100%);
-http://yapılmaktadır. Mevcut API servislerimiz üzerinden sunulan hizmetlerin sürekliliği
-http://}
-http://önceliğimiz olup, .txt formatındaki dosya paylaşımı <strong>1 Haziran 2026</strong>
+http://<html lang="en">
+http://<link rel="stylesheet" href="swagger-ui.css" />
+http://<meta
+http://<meta charset="utf-8" />
+http://<meta name="viewport" content="width=device-width, initial-scale=1" />
+http://<script src="swagger-ui-bundle.js"></script>
+http://<script src="usom.js"></script>
+http://<title>T.C. Siber Güvenlik Başkanlığı</title>
+http://content="SwaggerIU"
+http://name="description"

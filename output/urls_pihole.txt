@@ -1,40 +1,4 @@
 # USOM Zararlı Domain Listesi (Pi-hole Format)
-# Son Güncelleme: 2026-06-01 09:16:08 UTC
-# Toplam: 36 Domain
+# Son Güncelleme: 2026-06-01 12:01:56 UTC
+# Toplam: 0 Domain
 
-align-items
-animation
-background
-body
-color
-content
-display
-flex-direction
-flex-wrap
-font-display
-font-family
-font-size
-font-style
-font-weight
-gap
-height
-hyphens
-inset
-justify-content
-letter-spacing
-line-height
-margin
-margin-bottom
-margin-left
-margin-top
-max-width
-min-height
-object-fit
-overflow-wrap
-padding
-pointer-events
-position
-src
-text-align
-transparent
-width
