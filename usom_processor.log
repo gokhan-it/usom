@@ -4527,3 +4527,31 @@
 2026-06-03 16:04:25,353 - WARNING - Client hatası: Cannot connect to host siberguvenlik.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 8)
 2026-06-03 16:04:25,353 - ERROR - URL listesi çekme başarısız
 2026-06-03 16:04:25,353 - ERROR - === İşlem Başarısız (212.6s) ===
+2026-06-03 16:07:23,723 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-06-03 16:07:23,723 - INFO - USOM Processor başlatıldı
+2026-06-03 16:07:23,723 - INFO - USOM URL işleme başlatılıyor...
+2026-06-03 16:07:23,723 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-06-03 16:07:34,775 - WARNING - Client hatası: Cannot connect to host siberguvenlik.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 1)
+2026-06-03 16:07:34,775 - INFO - 1.0 saniye bekleniyor...
+2026-06-03 16:07:35,776 - INFO - USOM URL listesi çekiliyor... (Deneme 2/8)
+2026-06-03 16:07:45,937 - WARNING - Client hatası: Cannot connect to host siberguvenlik.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 2)
+2026-06-03 16:07:45,937 - INFO - 2.0 saniye bekleniyor...
+2026-06-03 16:07:47,940 - INFO - USOM URL listesi çekiliyor... (Deneme 3/8)
+2026-06-03 16:07:58,098 - WARNING - Client hatası: Cannot connect to host siberguvenlik.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 3)
+2026-06-03 16:07:58,098 - INFO - 4.0 saniye bekleniyor...
+2026-06-03 16:08:02,101 - INFO - USOM URL listesi çekiliyor... (Deneme 4/8)
+2026-06-03 16:08:12,264 - WARNING - Client hatası: Cannot connect to host siberguvenlik.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 4)
+2026-06-03 16:08:12,264 - INFO - 8.0 saniye bekleniyor...
+2026-06-03 16:08:20,269 - INFO - USOM URL listesi çekiliyor... (Deneme 5/8)
+2026-06-03 16:08:31,028 - WARNING - Client hatası: Cannot connect to host siberguvenlik.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 5)
+2026-06-03 16:08:31,028 - INFO - 16.0 saniye bekleniyor...
+2026-06-03 16:08:47,032 - INFO - USOM URL listesi çekiliyor... (Deneme 6/8)
+2026-06-03 16:08:58,091 - WARNING - Client hatası: Cannot connect to host siberguvenlik.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 6)
+2026-06-03 16:08:58,091 - INFO - 32.0 saniye bekleniyor...
+2026-06-03 16:09:30,109 - INFO - USOM URL listesi çekiliyor... (Deneme 7/8)
+2026-06-03 16:09:40,869 - WARNING - Client hatası: Cannot connect to host siberguvenlik.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 7)
+2026-06-03 16:09:40,869 - INFO - 64.0 saniye bekleniyor...
+2026-06-03 16:10:44,928 - INFO - USOM URL listesi çekiliyor... (Deneme 8/8)
+2026-06-03 16:10:56,106 - WARNING - Client hatası: Cannot connect to host siberguvenlik.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 8)
+2026-06-03 16:10:56,106 - ERROR - URL listesi çekme başarısız
+2026-06-03 16:10:56,106 - ERROR - === İşlem Başarısız (212.4s) ===
