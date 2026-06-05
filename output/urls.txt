@@ -1,5 +1,5 @@
 # USOM Zararlı URL Listesi
-# Son Güncelleme: 2026-06-05 22:00:45 UTC
+# Son Güncelleme: 2026-06-05 22:44:23 UTC
 # Toplam: 18 URL
 
 http:///>
