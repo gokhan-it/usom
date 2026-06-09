@@ -7175,3 +7175,21 @@
 2026-06-09 02:06:54,122 - WARNING - Timeout hatası (Deneme 8)
 2026-06-09 02:06:54,123 - ERROR - URL listesi çekme başarısız
 2026-06-09 02:06:54,123 - ERROR - === İşlem Başarısız (375.0s) ===
+2026-06-09 03:00:52,014 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-06-09 03:00:52,014 - INFO - USOM Processor başlatıldı
+2026-06-09 03:00:52,014 - INFO - USOM URL işleme başlatılıyor...
+2026-06-09 03:00:52,014 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-06-09 03:00:54,687 - INFO - URL listesi başarıyla çekildi (433 karakter)
+2026-06-09 03:00:54,687 - INFO - URL'ler kategorize ediliyor...
+2026-06-09 03:00:54,687 - INFO - Toplam 18 satır işleniyor...
+2026-06-09 03:00:54,980 - INFO - ips: 0 entry
+2026-06-09 03:00:54,980 - INFO - urls: 18 entry
+2026-06-09 03:00:54,980 - INFO - domains_pihole: 0 entry
+2026-06-09 03:00:54,980 - INFO - domains_adblock: 0 entry
+2026-06-09 03:00:54,980 - INFO - Çıktı dosyaları yazılıyor...
+2026-06-09 03:00:54,981 - INFO - ips.txt dosyası yazıldı (0 entry)
+2026-06-09 03:00:54,981 - INFO - urls.txt dosyası yazıldı (18 entry)
+2026-06-09 03:00:54,981 - INFO - urls_pihole.txt dosyası yazıldı (0 entry)
+2026-06-09 03:00:54,981 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
+2026-06-09 03:00:54,981 - INFO - İşlem başarıyla tamamlandı!
+2026-06-09 03:00:54,982 - INFO - === İşlem Başarıyla Tamamlandı (3.0s) ===
