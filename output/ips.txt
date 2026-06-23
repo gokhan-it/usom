@@ -1,4 +1,4 @@
 # USOM Zararlı IP Listesi
-# Son Güncelleme: 2026-06-23 05:00:45 UTC
+# Son Güncelleme: 2026-06-23 06:00:46 UTC
 # Toplam: 0 IP
 
