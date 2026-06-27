@@ -16180,3 +16180,31 @@
 2026-06-27 22:00:47,298 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
 2026-06-27 22:00:47,298 - INFO - İşlem başarıyla tamamlandı!
 2026-06-27 22:00:47,299 - INFO - === İşlem Başarıyla Tamamlandı (5.1s) ===
+2026-06-27 23:00:43,617 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-06-27 23:00:43,617 - INFO - USOM Processor başlatıldı
+2026-06-27 23:00:43,617 - INFO - USOM URL işleme başlatılıyor...
+2026-06-27 23:00:43,617 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-06-27 23:00:53,632 - WARNING - Client hatası: Cannot connect to host www.usom.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 1)
+2026-06-27 23:00:53,632 - INFO - 1.0 saniye bekleniyor...
+2026-06-27 23:00:54,633 - INFO - USOM URL listesi çekiliyor... (Deneme 2/8)
+2026-06-27 23:01:25,262 - WARNING - Timeout hatası (Deneme 2)
+2026-06-27 23:01:25,262 - INFO - 2.0 saniye bekleniyor...
+2026-06-27 23:01:27,264 - INFO - USOM URL listesi çekiliyor... (Deneme 3/8)
+2026-06-27 23:01:58,276 - WARNING - Timeout hatası (Deneme 3)
+2026-06-27 23:01:58,276 - INFO - 4.0 saniye bekleniyor...
+2026-06-27 23:02:02,280 - INFO - USOM URL listesi çekiliyor... (Deneme 4/8)
+2026-06-27 23:02:33,270 - WARNING - Timeout hatası (Deneme 4)
+2026-06-27 23:02:33,270 - INFO - 8.0 saniye bekleniyor...
+2026-06-27 23:02:41,278 - INFO - USOM URL listesi çekiliyor... (Deneme 5/8)
+2026-06-27 23:03:12,277 - WARNING - Timeout hatası (Deneme 5)
+2026-06-27 23:03:12,278 - INFO - 16.0 saniye bekleniyor...
+2026-06-27 23:03:28,294 - INFO - USOM URL listesi çekiliyor... (Deneme 6/8)
+2026-06-27 23:03:59,280 - WARNING - Timeout hatası (Deneme 6)
+2026-06-27 23:03:59,280 - INFO - 32.0 saniye bekleniyor...
+2026-06-27 23:04:31,313 - INFO - USOM URL listesi çekiliyor... (Deneme 7/8)
+2026-06-27 23:05:02,279 - WARNING - Timeout hatası (Deneme 7)
+2026-06-27 23:05:02,279 - INFO - 64.0 saniye bekleniyor...
+2026-06-27 23:06:06,344 - INFO - USOM URL listesi çekiliyor... (Deneme 8/8)
+2026-06-27 23:06:37,264 - WARNING - Timeout hatası (Deneme 8)
+2026-06-27 23:06:37,264 - ERROR - URL listesi çekme başarısız
+2026-06-27 23:06:37,264 - ERROR - === İşlem Başarısız (353.6s) ===
