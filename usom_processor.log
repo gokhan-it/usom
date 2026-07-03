@@ -19358,3 +19358,31 @@
 2026-07-03 11:00:53,221 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
 2026-07-03 11:00:53,221 - INFO - İşlem başarıyla tamamlandı!
 2026-07-03 11:00:53,221 - INFO - === İşlem Başarıyla Tamamlandı (2.8s) ===
+2026-07-03 12:00:54,006 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-07-03 12:00:54,006 - INFO - USOM Processor başlatıldı
+2026-07-03 12:00:54,006 - INFO - USOM URL işleme başlatılıyor...
+2026-07-03 12:00:54,006 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-07-03 12:01:24,692 - WARNING - Timeout hatası (Deneme 1)
+2026-07-03 12:01:24,692 - INFO - 1.0 saniye bekleniyor...
+2026-07-03 12:01:25,693 - INFO - USOM URL listesi çekiliyor... (Deneme 2/8)
+2026-07-03 12:01:56,695 - WARNING - Timeout hatası (Deneme 2)
+2026-07-03 12:01:56,695 - INFO - 2.0 saniye bekleniyor...
+2026-07-03 12:01:58,697 - INFO - USOM URL listesi çekiliyor... (Deneme 3/8)
+2026-07-03 12:02:29,682 - WARNING - Timeout hatası (Deneme 3)
+2026-07-03 12:02:29,683 - INFO - 4.0 saniye bekleniyor...
+2026-07-03 12:02:33,687 - INFO - USOM URL listesi çekiliyor... (Deneme 4/8)
+2026-07-03 12:03:04,684 - WARNING - Timeout hatası (Deneme 4)
+2026-07-03 12:03:04,684 - INFO - 8.0 saniye bekleniyor...
+2026-07-03 12:03:12,692 - INFO - USOM URL listesi çekiliyor... (Deneme 5/8)
+2026-07-03 12:03:43,692 - WARNING - Timeout hatası (Deneme 5)
+2026-07-03 12:03:43,692 - INFO - 16.0 saniye bekleniyor...
+2026-07-03 12:03:59,709 - INFO - USOM URL listesi çekiliyor... (Deneme 6/8)
+2026-07-03 12:04:30,684 - WARNING - Timeout hatası (Deneme 6)
+2026-07-03 12:04:30,684 - INFO - 32.0 saniye bekleniyor...
+2026-07-03 12:05:02,700 - INFO - USOM URL listesi çekiliyor... (Deneme 7/8)
+2026-07-03 12:05:33,692 - WARNING - Timeout hatası (Deneme 7)
+2026-07-03 12:05:33,693 - INFO - 64.0 saniye bekleniyor...
+2026-07-03 12:06:37,757 - INFO - USOM URL listesi çekiliyor... (Deneme 8/8)
+2026-07-03 12:07:08,691 - WARNING - Timeout hatası (Deneme 8)
+2026-07-03 12:07:08,691 - ERROR - URL listesi çekme başarısız
+2026-07-03 12:07:08,691 - ERROR - === İşlem Başarısız (374.7s) ===
