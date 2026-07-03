@@ -19386,3 +19386,31 @@
 2026-07-03 12:07:08,691 - WARNING - Timeout hatası (Deneme 8)
 2026-07-03 12:07:08,691 - ERROR - URL listesi çekme başarısız
 2026-07-03 12:07:08,691 - ERROR - === İşlem Başarısız (374.7s) ===
+2026-07-03 13:00:47,216 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-07-03 13:00:47,216 - INFO - USOM Processor başlatıldı
+2026-07-03 13:00:47,216 - INFO - USOM URL işleme başlatılıyor...
+2026-07-03 13:00:47,216 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-07-03 13:01:17,887 - WARNING - Timeout hatası (Deneme 1)
+2026-07-03 13:01:17,887 - INFO - 1.0 saniye bekleniyor...
+2026-07-03 13:01:18,889 - INFO - USOM URL listesi çekiliyor... (Deneme 2/8)
+2026-07-03 13:01:49,894 - WARNING - Timeout hatası (Deneme 2)
+2026-07-03 13:01:49,894 - INFO - 2.0 saniye bekleniyor...
+2026-07-03 13:01:51,895 - INFO - USOM URL listesi çekiliyor... (Deneme 3/8)
+2026-07-03 13:02:22,901 - WARNING - Timeout hatası (Deneme 3)
+2026-07-03 13:02:22,901 - INFO - 4.0 saniye bekleniyor...
+2026-07-03 13:02:26,905 - INFO - USOM URL listesi çekiliyor... (Deneme 4/8)
+2026-07-03 13:02:57,902 - WARNING - Timeout hatası (Deneme 4)
+2026-07-03 13:02:57,902 - INFO - 8.0 saniye bekleniyor...
+2026-07-03 13:03:05,910 - INFO - USOM URL listesi çekiliyor... (Deneme 5/8)
+2026-07-03 13:03:36,899 - WARNING - Timeout hatası (Deneme 5)
+2026-07-03 13:03:36,899 - INFO - 16.0 saniye bekleniyor...
+2026-07-03 13:03:52,916 - INFO - USOM URL listesi çekiliyor... (Deneme 6/8)
+2026-07-03 13:04:23,901 - WARNING - Timeout hatası (Deneme 6)
+2026-07-03 13:04:23,901 - INFO - 32.0 saniye bekleniyor...
+2026-07-03 13:04:55,918 - INFO - USOM URL listesi çekiliyor... (Deneme 7/8)
+2026-07-03 13:05:26,900 - WARNING - Timeout hatası (Deneme 7)
+2026-07-03 13:05:26,900 - INFO - 64.0 saniye bekleniyor...
+2026-07-03 13:06:30,950 - INFO - USOM URL listesi çekiliyor... (Deneme 8/8)
+2026-07-03 13:07:01,900 - WARNING - Timeout hatası (Deneme 8)
+2026-07-03 13:07:01,900 - ERROR - URL listesi çekme başarısız
+2026-07-03 13:07:01,900 - ERROR - === İşlem Başarısız (374.7s) ===
