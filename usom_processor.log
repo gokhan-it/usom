@@ -19414,3 +19414,27 @@
 2026-07-03 13:07:01,900 - WARNING - Timeout hatası (Deneme 8)
 2026-07-03 13:07:01,900 - ERROR - URL listesi çekme başarısız
 2026-07-03 13:07:01,900 - ERROR - === İşlem Başarısız (374.7s) ===
+2026-07-03 13:13:15,888 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-07-03 13:13:15,888 - INFO - USOM Processor başlatıldı
+2026-07-03 13:13:15,888 - INFO - USOM URL işleme başlatılıyor...
+2026-07-03 13:13:15,888 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-07-03 13:13:46,278 - WARNING - Timeout hatası (Deneme 1)
+2026-07-03 13:13:46,278 - INFO - 1.0 saniye bekleniyor...
+2026-07-03 13:13:47,279 - INFO - USOM URL listesi çekiliyor... (Deneme 2/8)
+2026-07-03 13:14:18,289 - WARNING - Timeout hatası (Deneme 2)
+2026-07-03 13:14:18,289 - INFO - 2.0 saniye bekleniyor...
+2026-07-03 13:14:20,291 - INFO - USOM URL listesi çekiliyor... (Deneme 3/8)
+2026-07-03 13:14:22,989 - INFO - URL listesi başarıyla çekildi (433 karakter)
+2026-07-03 13:14:22,989 - INFO - URL'ler kategorize ediliyor...
+2026-07-03 13:14:22,989 - INFO - Toplam 18 satır işleniyor...
+2026-07-03 13:14:23,125 - INFO - ips: 0 entry
+2026-07-03 13:14:23,125 - INFO - urls: 18 entry
+2026-07-03 13:14:23,125 - INFO - domains_pihole: 0 entry
+2026-07-03 13:14:23,125 - INFO - domains_adblock: 0 entry
+2026-07-03 13:14:23,125 - INFO - Çıktı dosyaları yazılıyor...
+2026-07-03 13:14:23,125 - INFO - ips.txt dosyası yazıldı (0 entry)
+2026-07-03 13:14:23,125 - INFO - urls.txt dosyası yazıldı (18 entry)
+2026-07-03 13:14:23,125 - INFO - urls_pihole.txt dosyası yazıldı (0 entry)
+2026-07-03 13:14:23,126 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
+2026-07-03 13:14:23,126 - INFO - İşlem başarıyla tamamlandı!
+2026-07-03 13:14:23,126 - INFO - === İşlem Başarıyla Tamamlandı (67.2s) ===
