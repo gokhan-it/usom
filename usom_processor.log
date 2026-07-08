@@ -22516,3 +22516,21 @@
 2026-07-08 16:01:13,837 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
 2026-07-08 16:01:13,837 - INFO - İşlem başarıyla tamamlandı!
 2026-07-08 16:01:13,837 - INFO - === İşlem Başarıyla Tamamlandı (2.9s) ===
+2026-07-08 16:51:19,006 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-07-08 16:51:19,006 - INFO - USOM Processor başlatıldı
+2026-07-08 16:51:19,006 - INFO - USOM URL işleme başlatılıyor...
+2026-07-08 16:51:19,006 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-07-08 16:51:22,082 - INFO - URL listesi başarıyla çekildi (433 karakter)
+2026-07-08 16:51:22,082 - INFO - URL'ler kategorize ediliyor...
+2026-07-08 16:51:22,083 - INFO - Toplam 18 satır işleniyor...
+2026-07-08 16:51:22,275 - INFO - ips: 0 entry
+2026-07-08 16:51:22,275 - INFO - urls: 18 entry
+2026-07-08 16:51:22,275 - INFO - domains_pihole: 0 entry
+2026-07-08 16:51:22,275 - INFO - domains_adblock: 0 entry
+2026-07-08 16:51:22,275 - INFO - Çıktı dosyaları yazılıyor...
+2026-07-08 16:51:22,276 - INFO - ips.txt dosyası yazıldı (0 entry)
+2026-07-08 16:51:22,276 - INFO - urls.txt dosyası yazıldı (18 entry)
+2026-07-08 16:51:22,276 - INFO - urls_pihole.txt dosyası yazıldı (0 entry)
+2026-07-08 16:51:22,276 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
+2026-07-08 16:51:22,276 - INFO - İşlem başarıyla tamamlandı!
+2026-07-08 16:51:22,277 - INFO - === İşlem Başarıyla Tamamlandı (3.3s) ===
