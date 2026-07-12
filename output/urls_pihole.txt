@@ -1,4 +1,4 @@
 # USOM Zararlı Domain Listesi (Pi-hole Format)
-# Son Güncelleme: 2026-07-12 12:08:30 UTC
+# Son Güncelleme: 2026-07-12 13:01:03 UTC
 # Toplam: 0 Domain
 
