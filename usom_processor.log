@@ -46627,3 +46627,42 @@
 2026-08-14 18:01:01,018 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
 2026-08-14 18:01:01,018 - INFO - İşlem başarıyla tamamlandı!
 2026-08-14 18:01:01,018 - INFO - === İşlem Başarıyla Tamamlandı (11.4s) ===
+2026-08-14 18:07:53,161 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-08-14 18:07:53,162 - INFO - USOM Processor başlatıldı
+2026-08-14 18:07:53,162 - INFO - USOM URL işleme başlatılıyor...
+2026-08-14 18:07:53,162 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-08-14 18:08:23,406 - WARNING - Timeout hatası (Deneme 1)
+2026-08-14 18:08:23,406 - INFO - 1.0 saniye bekleniyor...
+2026-08-14 18:08:24,408 - INFO - USOM URL listesi çekiliyor... (Deneme 2/8)
+2026-08-14 18:08:55,408 - WARNING - Timeout hatası (Deneme 2)
+2026-08-14 18:08:55,408 - INFO - 2.0 saniye bekleniyor...
+2026-08-14 18:08:57,411 - INFO - USOM URL listesi çekiliyor... (Deneme 3/8)
+2026-08-14 18:09:28,407 - WARNING - Timeout hatası (Deneme 3)
+2026-08-14 18:09:28,407 - INFO - 4.0 saniye bekleniyor...
+2026-08-14 18:09:32,412 - INFO - USOM URL listesi çekiliyor... (Deneme 4/8)
+2026-08-14 18:10:03,409 - WARNING - Timeout hatası (Deneme 4)
+2026-08-14 18:10:03,409 - INFO - 8.0 saniye bekleniyor...
+2026-08-14 18:10:11,412 - INFO - USOM URL listesi çekiliyor... (Deneme 5/8)
+2026-08-14 18:10:42,402 - WARNING - Timeout hatası (Deneme 5)
+2026-08-14 18:10:42,402 - INFO - 16.0 saniye bekleniyor...
+2026-08-14 18:10:58,418 - INFO - USOM URL listesi çekiliyor... (Deneme 6/8)
+2026-08-14 18:11:29,408 - WARNING - Timeout hatası (Deneme 6)
+2026-08-14 18:11:29,408 - INFO - 32.0 saniye bekleniyor...
+2026-08-14 18:12:01,425 - INFO - USOM URL listesi çekiliyor... (Deneme 7/8)
+2026-08-14 18:12:32,395 - WARNING - Timeout hatası (Deneme 7)
+2026-08-14 18:12:32,395 - INFO - 64.0 saniye bekleniyor...
+2026-08-14 18:13:36,422 - INFO - USOM URL listesi çekiliyor... (Deneme 8/8)
+2026-08-14 18:13:38,886 - INFO - URL listesi başarıyla çekildi (433 karakter)
+2026-08-14 18:13:38,886 - INFO - URL'ler kategorize ediliyor...
+2026-08-14 18:13:38,886 - INFO - Toplam 18 satır işleniyor...
+2026-08-14 18:13:39,138 - INFO - ips: 0 entry
+2026-08-14 18:13:39,138 - INFO - urls: 18 entry
+2026-08-14 18:13:39,139 - INFO - domains_pihole: 0 entry
+2026-08-14 18:13:39,139 - INFO - domains_adblock: 0 entry
+2026-08-14 18:13:39,139 - INFO - Çıktı dosyaları yazılıyor...
+2026-08-14 18:13:39,139 - INFO - ips.txt dosyası yazıldı (0 entry)
+2026-08-14 18:13:39,139 - INFO - urls.txt dosyası yazıldı (18 entry)
+2026-08-14 18:13:39,139 - INFO - urls_pihole.txt dosyası yazıldı (0 entry)
+2026-08-14 18:13:39,140 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
+2026-08-14 18:13:39,140 - INFO - İşlem başarıyla tamamlandı!
+2026-08-14 18:13:39,140 - INFO - === İşlem Başarıyla Tamamlandı (346.0s) ===
