@@ -53821,3 +53821,27 @@
 2026-08-23 08:00:53,332 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
 2026-08-23 08:00:53,332 - INFO - İşlem başarıyla tamamlandı!
 2026-08-23 08:00:53,333 - INFO - === İşlem Başarıyla Tamamlandı (4.3s) ===
+2026-08-23 08:50:08,964 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-08-23 08:50:08,964 - INFO - USOM Processor başlatıldı
+2026-08-23 08:50:08,964 - INFO - USOM URL işleme başlatılıyor...
+2026-08-23 08:50:08,964 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-08-23 08:50:18,980 - WARNING - Client hatası: Cannot connect to host www.usom.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 1)
+2026-08-23 08:50:18,980 - INFO - 1.0 saniye bekleniyor...
+2026-08-23 08:50:19,982 - INFO - USOM URL listesi çekiliyor... (Deneme 2/8)
+2026-08-23 08:50:27,573 - WARNING - Client hatası: Cannot connect to host www.usom.gov.tr:443 ssl:default [Temporary failure in name resolution] (Deneme 2)
+2026-08-23 08:50:27,574 - INFO - 2.0 saniye bekleniyor...
+2026-08-23 08:50:29,576 - INFO - USOM URL listesi çekiliyor... (Deneme 3/8)
+2026-08-23 08:50:31,861 - INFO - URL listesi başarıyla çekildi (433 karakter)
+2026-08-23 08:50:31,861 - INFO - URL'ler kategorize ediliyor...
+2026-08-23 08:50:31,862 - INFO - Toplam 18 satır işleniyor...
+2026-08-23 08:50:32,043 - INFO - ips: 0 entry
+2026-08-23 08:50:32,043 - INFO - urls: 18 entry
+2026-08-23 08:50:32,043 - INFO - domains_pihole: 0 entry
+2026-08-23 08:50:32,043 - INFO - domains_adblock: 0 entry
+2026-08-23 08:50:32,043 - INFO - Çıktı dosyaları yazılıyor...
+2026-08-23 08:50:32,043 - INFO - ips.txt dosyası yazıldı (0 entry)
+2026-08-23 08:50:32,043 - INFO - urls.txt dosyası yazıldı (18 entry)
+2026-08-23 08:50:32,044 - INFO - urls_pihole.txt dosyası yazıldı (0 entry)
+2026-08-23 08:50:32,044 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
+2026-08-23 08:50:32,044 - INFO - İşlem başarıyla tamamlandı!
+2026-08-23 08:50:32,044 - INFO - === İşlem Başarıyla Tamamlandı (23.1s) ===
