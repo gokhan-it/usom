@@ -72568,3 +72568,21 @@ requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetErro
 2026-09-25 13:01:01,078 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
 2026-09-25 13:01:01,078 - INFO - İşlem başarıyla tamamlandı!
 2026-09-25 13:01:01,078 - INFO - === İşlem Başarıyla Tamamlandı (3.8s) ===
+2026-09-25 13:52:22,273 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-09-25 13:52:22,273 - INFO - USOM Processor başlatıldı
+2026-09-25 13:52:22,273 - INFO - USOM URL işleme başlatılıyor...
+2026-09-25 13:52:22,273 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-09-25 13:52:24,240 - INFO - URL listesi başarıyla çekildi (433 karakter)
+2026-09-25 13:52:24,240 - INFO - URL'ler kategorize ediliyor...
+2026-09-25 13:52:24,240 - INFO - Toplam 18 satır işleniyor...
+2026-09-25 13:52:24,387 - INFO - ips: 0 entry
+2026-09-25 13:52:24,387 - INFO - urls: 18 entry
+2026-09-25 13:52:24,387 - INFO - domains_pihole: 0 entry
+2026-09-25 13:52:24,387 - INFO - domains_adblock: 0 entry
+2026-09-25 13:52:24,387 - INFO - Çıktı dosyaları yazılıyor...
+2026-09-25 13:52:24,388 - INFO - ips.txt dosyası yazıldı (0 entry)
+2026-09-25 13:52:24,388 - INFO - urls.txt dosyası yazıldı (18 entry)
+2026-09-25 13:52:24,388 - INFO - urls_pihole.txt dosyası yazıldı (0 entry)
+2026-09-25 13:52:24,388 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
+2026-09-25 13:52:24,388 - INFO - İşlem başarıyla tamamlandı!
+2026-09-25 13:52:24,389 - INFO - === İşlem Başarıyla Tamamlandı (2.1s) ===
