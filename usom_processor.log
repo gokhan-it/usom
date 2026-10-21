@@ -85975,3 +85975,42 @@ requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetErro
 2026-10-21 15:01:07,943 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
 2026-10-21 15:01:07,943 - INFO - İşlem başarıyla tamamlandı!
 2026-10-21 15:01:07,943 - INFO - === İşlem Başarıyla Tamamlandı (6.9s) ===
+2026-10-21 15:19:27,522 - INFO - === USOM URL Processor Başlatılıyor ===
+2026-10-21 15:19:27,523 - INFO - USOM Processor başlatıldı
+2026-10-21 15:19:27,523 - INFO - USOM URL işleme başlatılıyor...
+2026-10-21 15:19:27,523 - INFO - USOM URL listesi çekiliyor... (Deneme 1/8)
+2026-10-21 15:19:57,605 - WARNING - Timeout hatası (Deneme 1)
+2026-10-21 15:19:57,605 - INFO - 1.0 saniye bekleniyor...
+2026-10-21 15:19:58,606 - INFO - USOM URL listesi çekiliyor... (Deneme 2/8)
+2026-10-21 15:20:29,595 - WARNING - Timeout hatası (Deneme 2)
+2026-10-21 15:20:29,595 - INFO - 2.0 saniye bekleniyor...
+2026-10-21 15:20:31,597 - INFO - USOM URL listesi çekiliyor... (Deneme 3/8)
+2026-10-21 15:21:02,596 - WARNING - Timeout hatası (Deneme 3)
+2026-10-21 15:21:02,596 - INFO - 4.0 saniye bekleniyor...
+2026-10-21 15:21:06,601 - INFO - USOM URL listesi çekiliyor... (Deneme 4/8)
+2026-10-21 15:21:37,598 - WARNING - Timeout hatası (Deneme 4)
+2026-10-21 15:21:37,598 - INFO - 8.0 saniye bekleniyor...
+2026-10-21 15:21:45,606 - INFO - USOM URL listesi çekiliyor... (Deneme 5/8)
+2026-10-21 15:22:16,598 - WARNING - Timeout hatası (Deneme 5)
+2026-10-21 15:22:16,598 - INFO - 16.0 saniye bekleniyor...
+2026-10-21 15:22:32,612 - INFO - USOM URL listesi çekiliyor... (Deneme 6/8)
+2026-10-21 15:23:03,607 - WARNING - Timeout hatası (Deneme 6)
+2026-10-21 15:23:03,607 - INFO - 32.0 saniye bekleniyor...
+2026-10-21 15:23:35,610 - INFO - USOM URL listesi çekiliyor... (Deneme 7/8)
+2026-10-21 15:24:06,607 - WARNING - Timeout hatası (Deneme 7)
+2026-10-21 15:24:06,607 - INFO - 64.0 saniye bekleniyor...
+2026-10-21 15:25:10,649 - INFO - USOM URL listesi çekiliyor... (Deneme 8/8)
+2026-10-21 15:25:13,659 - INFO - URL listesi başarıyla çekildi (433 karakter)
+2026-10-21 15:25:13,660 - INFO - URL'ler kategorize ediliyor...
+2026-10-21 15:25:13,660 - INFO - Toplam 18 satır işleniyor...
+2026-10-21 15:25:13,766 - INFO - ips: 0 entry
+2026-10-21 15:25:13,766 - INFO - urls: 18 entry
+2026-10-21 15:25:13,766 - INFO - domains_pihole: 0 entry
+2026-10-21 15:25:13,766 - INFO - domains_adblock: 0 entry
+2026-10-21 15:25:13,766 - INFO - Çıktı dosyaları yazılıyor...
+2026-10-21 15:25:13,767 - INFO - ips.txt dosyası yazıldı (0 entry)
+2026-10-21 15:25:13,767 - INFO - urls.txt dosyası yazıldı (18 entry)
+2026-10-21 15:25:13,768 - INFO - urls_pihole.txt dosyası yazıldı (0 entry)
+2026-10-21 15:25:13,768 - INFO - urls_UBL.txt dosyası yazıldı (0 entry)
+2026-10-21 15:25:13,768 - INFO - İşlem başarıyla tamamlandı!
+2026-10-21 15:25:13,768 - INFO - === İşlem Başarıyla Tamamlandı (346.2s) ===
